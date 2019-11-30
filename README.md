@@ -76,3 +76,18 @@ curl -X GET localhost:1026/version -H 'Accept: application/json' | jq
   + [https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/Fiware/specifications/master/OpenAPI/ngsiv2/ngsiv2-openapi.json](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/Fiware/specifications/master/OpenAPI/ngsiv2/ngsiv2-openapi.json)
 
   + [http://fiware.github.io/specifications/ngsiv2/stable/](http://fiware.github.io/specifications/ngsiv2/stable/)
+
+
+# researching into containers
+
+```bash
+docker ps
+docker attach 661e4a617f8c
+docker exec -it 661e4a617f8c /bin/bash
+
+# id
+# id -u
+# id -g
+docker exec -it --user root 661e4a617f8c /bin/bash
+docker exec -it --user 0 661e4a617f8c /bin/bash
+```
